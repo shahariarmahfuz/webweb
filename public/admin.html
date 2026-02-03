@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel | Nebula Bazaar</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="admin-body">
+    <header class="site-header compact">
+      <nav class="nav">
+        <div class="logo">Nebula Bazaar Admin</div>
+        <div class="nav-links">
+          <a href="/">Back to site</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="admin-main">
+      <section class="admin-card">
+        <div class="section-heading">
+          <h2>Admin Control Panel</h2>
+          <p>ডেমো টেস্টিংয়ের জন্য দ্রুত লিস্টিং তৈরি ও ম্যানেজ করুন।</p>
+        </div>
+        <form id="listing-form" class="admin-form">
+          <div class="form-grid">
+            <label>
+              Title
+              <input type="text" name="title" placeholder="Used iPhone 13" required />
+            </label>
+            <label>
+              Price
+              <input type="text" name="price" placeholder="৳ 55,000" required />
+            </label>
+            <label>
+              Category
+              <input type="text" name="category" placeholder="Electronics" required />
+            </label>
+            <label>
+              Condition
+              <input type="text" name="condition" placeholder="Like New" required />
+            </label>
+            <label>
+              Location
+              <input type="text" name="location" placeholder="Dhaka" required />
+            </label>
+            <label>
+              Image URL
+              <input
+                type="url"
+                name="imageUrl"
+                placeholder="https://..."
+                required
+              />
+            </label>
+          </div>
+          <label>
+            Description
+            <textarea
+              name="description"
+              rows="4"
+              placeholder="Write a short description"
+              required
+            ></textarea>
+          </label>
+          <button type="submit" class="primary-button">Publish Listing</button>
+          <p class="form-note">* এই প্যানেলে কোনো লগইন নেই (testing mode)।</p>
+        </form>
+      </section>
+
+      <section class="admin-card">
+        <div class="section-heading">
+          <h2>Manage Listings</h2>
+          <p>লিস্টিংগুলো মুছে ফেলতে নিচের তালিকা ব্যবহার করুন।</p>
+        </div>
+        <div id="admin-list" class="admin-list"></div>
+      </section>
+    </main>
+
+    <script src="/admin.js"></script>
+  </body>
+</html>
