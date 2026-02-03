@@ -1,0 +1,14 @@
+{
+  "name": "webweb",
+  "version": "1.0.0",
+  "description": "Buy/Sell marketplace with admin panel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.8.1",
+    "express": "^4.19.2",
+    "nanoid": "^5.0.7"
+  }
+}
